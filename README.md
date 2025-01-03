@@ -1,5 +1,4 @@
-# React + Vite
-
+# Ejercicio Vuelos
 Con el fichero json adjunto realiza las siguientes tareas
 
    1) Incluye el fichero vuelos.json en tu proyecto. Léelo y muestra en un componente un listado con los destinos y por cada destino las opciones de vuelo ( número de vuelo y fecha) . 

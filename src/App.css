@@ -5,10 +5,122 @@
   text-align: center;
 }
 
-
-
-
-
-.read-the-docs {
-  color: #888;
+.destinations {
+  display: inline-flex;
+  list-style: none;
+  
 }
+
+.divVuelo {
+  background: #292929;
+  padding: 5px;
+  margin: 5px;
+  border: 4px solid #228583;
+  border-radius: 10px;
+  width: 250px ;
+
+}
+.panel {
+  background-color: rgba(67, 81, 143, 0.37);
+  border-radius: 10px;
+}
+.info {
+  display:flex;
+  justify-content: space-between;
+  padding:  5px 20px;
+}
+.field {
+  font-weight: bold;
+}
+.data {
+  
+}
+
+.reservarVuelos {
+  display: inline-flexbox;
+}
+
+/*Buttons*/
+
+.bookButtons {
+  margin: 5px;
+  padding:5px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: inherit;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: inherit;
+  color: #646cff;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.add {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+}
+.showButton {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #646cff;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.5em;
+  line-height: 1.1;
+  color:#228583;
+  margin-top: auto;
+  
+}
+
+h2 {
+  font-size: 2.7em;
+  margin-bottom: 0px;
+}
+
