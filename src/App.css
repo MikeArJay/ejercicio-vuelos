@@ -1,13 +1,24 @@
 #root {
-  max-width: 1280px;
+  width: auto;
   margin: 0 auto;
-  padding: 2rem;
+  padding: auto;
   text-align: center;
-}
+  align-content: center;
+  align-self: center;
+  max-width: 2000px;
+} 
 
-.destinations {
+
+.listDestinations {
   display: inline-flex;
   list-style: none;
+  align-content: center;
+  align-self: center;
+  min-width: 300px;
+  margin: 0%;
+}
+.divDestinations {
+  min-width: 300px;
   
 }
 
@@ -17,7 +28,7 @@
   margin: 5px;
   border: 4px solid #228583;
   border-radius: 10px;
-  width: 250px ;
+  width: auto;
 
 }
 .panel {
@@ -32,12 +43,14 @@
 .field {
   font-weight: bold;
 }
-.data {
-  
-}
 
 .reservarVuelos {
   display: inline-flexbox;
+}
+.banner {
+  width: 100%;
+  background-color: #f37c7c;
+  color:#1a1a1a
 }
 
 /*Buttons*/
@@ -58,6 +71,7 @@
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  font-weight: bold;
 }
 .add {
   margin-top: 0;
@@ -76,6 +90,24 @@
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  font-weight: bold;
+}
+.deleteButton {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin-bottom: 5px;
+  font-size: 0.7em;
+  font-family: inherit;
+  color: #ff6464;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-weight: bold;
+  
+}
+.deleteButton:hover {
+  border-color: #ff6464;
 }
 button:hover {
   border-color: #646cff;
@@ -122,5 +154,24 @@ h1 {
 h2 {
   font-size: 2.7em;
   margin-bottom: 0px;
+  align-self: center;
 }
 
+input {
+  width:100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 6px;
+  border-color:#228583;
+  background-color:  #292929;
+}
+input ::selection{
+  border-color: #646cff;
+  user-select: none;
+}
+.addFlightLabel {
+  display:block;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 5px;
+}

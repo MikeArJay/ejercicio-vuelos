@@ -36,17 +36,18 @@ function FormularioVuelo(props) {
             "number": "",
             "seats": ""
         })
+        setShowForm((prev)=> !prev);
     }
 
 
 
     return (
         <>
-            <button type="button" className="add bookButtons" onClick={handleShowForm}>Añadir vuelo</button>
+            <button type="button" className="add bookButtons" onClick={handleShowForm}> {showForm ? 'Cancelar' : 'Añadir vuelo'}</button>
             {showForm &&
                 <form onSubmit={handleSubmit}>
 
-                    <label>Fecha:
+                    <label className="addFlightLabel">Fecha:
                         <input
                             type="text"
                             name="date"
@@ -55,7 +56,7 @@ function FormularioVuelo(props) {
                         />
                     </label>
 
-                    <label>Hora:
+                    <label className="addFlightLabel">Hora:
                         <input
                             type="text"
                             name="time"
@@ -63,7 +64,7 @@ function FormularioVuelo(props) {
                             onChange={handleChange}
                         />
                     </label>
-                    <label>Número:
+                    <label className="addFlightLabel">Número:
                         <input
                             type="text"
                             name="number"
@@ -71,7 +72,7 @@ function FormularioVuelo(props) {
                             onChange={handleChange}
                         />
                     </label>
-                    <label>Nº asientos:
+                    <label className="addFlightLabel">Nº asientos:
                         <input
                             type="number"
                             name="seats"
@@ -79,7 +80,7 @@ function FormularioVuelo(props) {
                             onChange={handleChange}
                         />
                     </label>
-                    <input type="submit" />
+                    <button type="submit" className="add bookButtons">Añadir Vuelo</button> 
 
                 </form>
             }
