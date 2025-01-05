@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from "react";
-import importedVuelos from "./vuelos.json"
 import Vuelo from "./Vuelo.jsx"
 import FormularioVuelo from "./FormularioVuelo.jsx";
 
 function Vuelos() {
-    const [data, setData] = useState(importedVuelos);
+    const [data, setData] = useState([]);
     const [bannersData, setBannersData] = useState([])
-
-   
+    //obtencion de datos
+    const getData = async () => {
+        let response = await fetch('./vuelos.json');
+        let data = await response.json();
+        setData(data);
+    }
+    useEffect(() => {
+        if (data.length == 0) {
+            getData();
+        }
+    }, []);
 
     const addFlight = (flight, destination) => {
 
